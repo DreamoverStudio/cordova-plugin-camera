@@ -290,7 +290,7 @@ static NSString* toBase64(NSData* data) {
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     if([navigationController isKindOfClass:[UIImagePickerController class]]){
-        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+//        [[UIApplication sharedApplication] setStatusBarHidden:NO];
         UIImagePickerController* cameraPicker = (UIImagePickerController*)navigationController;
 
         if(![cameraPicker.mediaTypes containsObject:(NSString*)kUTTypeImage]){
